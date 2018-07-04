@@ -133,9 +133,15 @@ export default class App extends React.Component {
         }))
         break
       case "x!":
-        this.setState(prevState => ({
-          outputValue: factorial(parseFloat(prevState.outputValue))
-        }))
+        if (this.state.outputValue == ".") {
+          this.setState({
+            outputValue: "Syntax ERROR"
+          })
+        } else {
+          this.setState(prevState => ({
+            outputValue: factorial(parseFloat(prevState.outputValue))
+          }))
+        }
         break
       case "z":
         this.setState(prevState => ({
@@ -216,14 +222,26 @@ export default class App extends React.Component {
           }))
           break
         case "nPr":
-          this.setState(prevState =>  ({
-            outputValue: permutation(parseFloat(this.state.firstValueOnHold), parseFloat(prevState.outputValue))
-          }))
+          if (this.state.firstValueOnHold == "." || this.state.outputValue == ".") {
+            this.setState({
+              outputValue: "Syntax ERROR"
+            })
+          } else {
+            this.setState(prevState =>  ({
+              outputValue: permutation(parseFloat(this.state.firstValueOnHold), parseFloat(prevState.outputValue))
+            }))
+          }
           break
         case "nCr":
-          this.setState(prevState =>  ({
-            outputValue: combination(parseFloat(this.state.firstValueOnHold), parseFloat(prevState.outputValue))
-          }))
+          if (this.state.firstValueOnHold == "." || this.state.outputValue == ".") {
+            this.setState({
+              outputValue: "Syntax ERROR"
+            })
+          } else {
+            this.setState(prevState =>  ({
+              outputValue: combination(parseFloat(this.state.firstValueOnHold), parseFloat(prevState.outputValue))
+            }))
+          }
           break
       }
       this.setState({

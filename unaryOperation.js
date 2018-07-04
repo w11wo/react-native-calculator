@@ -1,6 +1,11 @@
 import React from 'react'
-import { TouchableOpacity, Text, StyleSheet } from 'react-native'
+import { Dimensions, TouchableOpacity, Text, StyleSheet } from 'react-native'
 import PropTypes from 'prop-types'
+
+const {
+  width: SCREEN_WIDTH,
+  height: SCREEN_HEIGHT,
+} = Dimensions.get('window')
 
 const styles = StyleSheet.create({
   buttonBox: {
@@ -12,7 +17,7 @@ const styles = StyleSheet.create({
     marginRight: 5,
   },
   buttonText: {
-    fontSize: 35,
+    fontSize: SCREEN_WIDTH*0.1,
     color: '#000',
   },
 })
