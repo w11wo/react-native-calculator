@@ -1,29 +1,9 @@
 A Calculator App written in React Native, includes basic Calculator functions, as well as several Trigonometry and Statistics Functions.
 
+![rn-calculator.jpg](rn-calculator.jpg?raw=true "rn-calculator.jpg")
+
 Currrently available functions:
 
-Trigonometry:
+Trigonometry: sin, cos, tan, arcsin, arccos, arctan
 
-•sin
-
-•cos
-
-•tan
-
-•asin
-
-•acos
-
-•atan
-
-Statistics:
-
-•Cumulative Distribution Function
-
-•Percent Point Function
-
-•Combination
-
-•Permutation
-
-![rn-calculator.jpg](rn-calculator.jpg?raw=true "rn-calculator.jpg")
+Statistics: Cumulative Distribution Function, Percent Point Function, Combination, Permutation
