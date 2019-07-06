@@ -25,3 +25,5 @@ Statistics:
 •Combination
 
 •Permutation
+
+![rn-calculator.jpg](rn-calculator.jpg?raw=true "rn-calculator.jpg")
